@@ -29,7 +29,7 @@ void stopDisplay()
 {
     // turn all off first
     for (int i = 3; i <= 10; i++)
-        if(i!=7)
+        if (i != 7)
             digitalWrite(i, LOW);
 
     digitalWrite(zeciSus, LOW);
@@ -115,7 +115,7 @@ void display(int nr)
 
     default:
         for (int i = 3; i <= 10; i++)
-            if(i!=7)
+            if (i != 7)
                 digitalWrite(i, LOW);
     }
 
@@ -206,6 +206,4 @@ void display(int nr)
 void loop()
 {
     stopDisplay();
-    for(int i=1; i<=99; i++)
-      display(i);
 }
